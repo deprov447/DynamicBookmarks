@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
   <link rel="stylesheet" href="popup.css">
+
   <title>Dymark_Popup</title>
 </head>
 <body>
@@ -18,17 +22,21 @@
       <span id="title" style="margin-left: 5px;padding: 5px;">Title of Current Page
       </span>
     </div>
-    <div id="popup_body">
-      <div style="padding: 5px;border-left: 2px solid antiquewhite;height: 175px;; margin: 2px;">
-      
-        Profile: <select id="profile">
-          <option>bool</option>
-          <option>booas</option>
-          <option>bodsal</option>
-          <option>Create New profile</option>
-        </select>
+    <div style="text-align: right; margin-bottom: 10px;">
+      Current: <select id="Curprofile">
+        <option value="" disabled selected>Select</option>
+        <option value="vals">asdasdasd</option>
+        <option value="vats">asdasdaasd</option>
 
-        <button>Add this Tab</button>
+        <option value="createnewpro">Create New profile</option>
+      </select>
+    </div>
+    <div id="popup_body">
+      <div id="p1">
+      
+
+
+        <button id="addBM">Add this Tab</button>
         <button>Edit Bookmarks</button>
         <button id="toCurrProf">Add to Current Profile
         </button>
@@ -36,9 +44,6 @@
       </div>
       
   
-    </div>
-    <div id="popup_foot">
-  asakbd
     </div>
   </div>
   <script src="popup.js"></script>
